@@ -11,8 +11,7 @@ This guide explains how to automate folder backups on Windows using a batch file
 
    ```bat
    @echo off
-   xcopy "C:\Path\To\SourceFolder" "D:\Path\To\DestinationFolder" /E /H /C /I
-   echo Backup completed on %date% at %time% >> "D:\Path\To\DestinationFolder\backup_log.txt"
+   Robocopy "C:\Path\To\SourceFolder" "D:\Path\To\DestinationFolder" 
    pause
    ```
 
